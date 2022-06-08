@@ -311,6 +311,9 @@ sleep 1
 sleep 1
 clear
 
+#This command will install rsync
+yum install -y rsync
+
 #This command will transfer the file to /var/www/html directory
 rsync -avP ~/wordpress/ /var/www/html/
 clear
