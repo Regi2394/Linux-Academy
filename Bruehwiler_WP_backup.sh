@@ -1,5 +1,27 @@
 #!/bin/sh
 
+#This command will install ntpdate to update the date and time of the VM
+yum install -y ntpdate
+echo "#############################################"
+echo "#                                           #"
+echo "#           Installed ntpdate               #"
+echo "#                                           #"
+echo "#############################################"
+sleep 1
+sleep 1
+clear
+
+#This command will update date and time
+ntpdate ntp.ubuntu.com
+echo "#############################################"
+echo "#                                           #"
+echo "#   Updated the time and date of the VM     #"
+echo "#                                           #"
+echo "#############################################"
+sleep 1
+sleep 1
+clear
+
 
 # This command will put current date as mm-dd-yyyy in $date
 date=$(date '+%m-%d-%Y')
