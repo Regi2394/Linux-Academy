@@ -10,6 +10,9 @@ sleep 1
 sleep 1
 clear
 
+#This command will install wget
+yum install -y wget
+
 #This command will install ntpdate to update the date and time of the VM
 yum install -y ntpdate
 echo "#############################################"
